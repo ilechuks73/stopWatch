@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/syle.css">
+  <title>STOPWATCH</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="main">
+      <div class="clock">
+        <div class="hour">
+          <h1 id="hour">0</h1>
+        </div>
+        <h1>:</h1>
+        <div class="minute">
+          <h1 id="minute">0</h1>
+        </div>
+        <h1>:</h1>
+        <div class="second">
+          <h1 id="second">0</h1>
+        </div>
+        <div class="milisecond">
+          <p id="milisecond">0</p>
+        </div>
+      </div>
+      <div class="buttons">
+        <button id="start"><img src="assets/images/icons/power.svg" alt=""></button>
+        <button id="pause" disabled="true"><img src="assets/images/icons/pause.svg" alt=""></button>
+        <button id="resume" class="hide"><img src="assets/images/icons/play.svg" alt=""></button>
+        <button id="reset"><img src="assets/images/icons/refreshing.svg" alt=""></button>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
