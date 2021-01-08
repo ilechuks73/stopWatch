@@ -35,10 +35,10 @@ startbtn.addEventListener('click', function () {
                 }
             }
         }
-        mss.innerText = ms
-        secs.innerText = sec
-        mins.innerText = min
-        hours.innerText = hour
+        mss.innerText = ms.toString().padStart('2', "0")
+        secs.innerText = sec.toString().padStart('2', "0")
+        mins.innerText = min.toString().padStart('2', "0")
+        hours.innerText = hour.toString().padStart('2', "0")
     }, 10);
 
 
@@ -63,8 +63,8 @@ resetbtn.addEventListener('click', function () {
     pausebtn.classList.remove('hide')
     resumebtn.classList.add('hide')
 
-    mss.innerText = 0
-    secs.innerText = 0
-    mins.innerText = 0
-    hours.innerText = 0
+    mss.innerText = '00'
+    secs.innerText = '00'
+    mins.innerText = '00'
+    hours.innerText = '00'
 })
